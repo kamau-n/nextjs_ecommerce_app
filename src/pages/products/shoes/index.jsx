@@ -19,7 +19,7 @@ export default function shoes() {
             alt="no image"
             width="220"
             height="220"
-            placeholder="blur"
+            // placeholder="blur"
           />
         </div>
       );
