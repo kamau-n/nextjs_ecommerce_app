@@ -2,16 +2,19 @@ import React from "react";
 
 import data from "../../../resources/shoes-products";
 import nav_bar from "@/components/nav_bar";
+import Image from "next/image";
 
 export default function shoes() {
   const dispaly = () => {
     // console.log(data);
     return data.map((product) => {
       return (
-        <div className="w-3/4 p-10 mx-auto my-10  bg-slate-300">
+        <div
+          key={product.id}
+          className="w-3/4 p-10 mx-auto my-10  bg-slate-300">
           <span>{product.id}</span>
           <span>{product.name}</span>
-          <img
+          <Image
             src={product.imageURL}
             alt="no image"
             width="220"
