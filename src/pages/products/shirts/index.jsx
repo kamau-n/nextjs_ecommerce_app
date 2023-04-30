@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-export default function shoes() {
+export default function Shoes() {
   const router = useRouter();
   const dispaly = () => {
     // console.log(data);

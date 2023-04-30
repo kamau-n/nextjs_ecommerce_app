@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 // import img5 from "../../resources/jacket.avif";
 import Footer from "@/components/Footer";
 
-export default function products() {
+export default function Products() {
   const router = useRouter();
 
   return (
