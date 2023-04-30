@@ -9,7 +9,7 @@ import img1 from "../../resources/shoes.jpg";
 import img2 from "../..//resources/shirt.webp";
 import img3 from "../../resources/mu.webp";
 import img4 from "../../resources/bag.webp";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 // import img5 from "../../resources/jacket.avif";
 import Footer from "@/components/Footer";
 

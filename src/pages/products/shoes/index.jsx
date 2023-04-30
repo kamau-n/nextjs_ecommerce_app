@@ -4,12 +4,12 @@ import data from "../../../resources/shoes-products";
 
 import Image from "next/image";
 
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-const router = useRouter();
 
 export default function shoes() {
+  const router = useRouter();
   const dispaly = () => {
     // console.log(data);
     return data.map((product) => {

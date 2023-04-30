@@ -4,7 +4,7 @@ import data from "../../../resources/shirt";
 
 import Image from "next/image";
 
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
