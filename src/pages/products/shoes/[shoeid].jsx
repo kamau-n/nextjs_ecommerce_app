@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+import shirt from "../../../resources/shirt";
 
 export default function ShoeDetails() {
   const router = useRouter();
   let data = router.query.data;
-  data = JSON.parse(data);
+  // data = JSON.parse(data);
+
+  console.log(data);
+
+  useEffect(() => {
+    console.log(data);
+    shirt.forEach((x) => {
+      console.log(x);
+      if ((x.id = data)) {
+        console.log("here is the product");
+        console.log(x);
+      }
+    });
+  });
 
   return (
     <div className="bg-white h-screen">

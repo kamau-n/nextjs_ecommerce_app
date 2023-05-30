@@ -17,17 +17,12 @@ export default function Shoes() {
         <div
           key={product.id}
           onClick={() => {
+            let id = product.id;
+
             router.push({
               pathname: `/products/shoes/${product.id}`,
               query: {
-                data: JSON.stringify({
-                  id: product.id,
-                  name: product.name,
-                  gender: product.gender,
-                  link: product.imageURL,
-                  brand: product.brand,
-                  price: product.price,
-                }),
+                data: id,
               },
             });
           }}
